@@ -1,8 +1,9 @@
 AC_PREREQ([2.52])
 AC_INIT(libtinySAK, 0.1, diopmamadou@doubango.org)
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([gnu subdir-objects])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([src/tsk.c])
+AC_CONFIG_MACRO_DIRS([m4])
 
 dnl find suitable C++ compiler
 AC_PROG_CC
@@ -31,8 +32,8 @@ CFLAGS="${CFLAGS=}"
 ### ENABLE-DEBUG
 AC_MSG_CHECKING(whether to enable debugging)
 debug_default="yes"
-AC_ARG_ENABLE(debug, 
-[  --enable-debug[=no/yes] turn on/off debugging 
+AC_ARG_ENABLE(debug,
+[  --enable-debug[=no/yes] turn on/off debugging
                        [[default=$debug_default]]],
 [ if test "x$enableval" = "xyes" ; then
 	CFLAGS="$CFLAGS -O0 -g3 -DDEBUG"
@@ -46,7 +47,7 @@ AC_ARG_ENABLE(debug,
 	AC_MSG_RESULT(yes)])
 
 ### DEBUG-LEVEL
-AC_ARG_WITH(debug-level, 
+AC_ARG_WITH(debug-level,
 [  --with-debug-level[=level] Set debug-level to level [[default=info]]
                        info: informational
                        warn: warnings
@@ -71,9 +72,16 @@ AC_ARG_WITH(debug-level,
 ## checks string functions
 AC_CHECK_FUNCS([stricmp strnicmp])
 
+AC_TRY_COMPILE([#include <pthread.h>],
+    [static int k = PTHREAD_MUTEX_RECURSIVE;],
+    [AC_DEFINE(TSK_RECURSIVE_MUTEXATTR, PTHREAD_MUTEX_RECURSIVE,
+        [Check whether PTHREAD_MUTEX_RECURSIVE is defined])],
+[AC_TRY_COMPILE([#include <pthread.h>],
+    [static int k = PTHREAD_MUTEX_RECURSIVE_NP;],
+        [AC_DEFINE(TSK_RECURSIVE_MUTEXATTR, PTHREAD_MUTEX_RECURSIVE_NP,
+            [Check whether PTHREAD_MUTEX_RECURSIVE_NP is defined])])])
 
 AC_OUTPUT(
 Makefile
 src/Makefile
-test/Makefile
 )
