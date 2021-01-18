@@ -1,4 +1,0 @@
-# doubango-tinySAK
-tinySAK Library from the doubango project for the purposes of adding
-SigComp support to Asterisk, as per [this helpful blog article](https://alokprasad7.blogspot.com/2016/02/sigcomp-in-asterisk-part-1-libraries.html).
-
