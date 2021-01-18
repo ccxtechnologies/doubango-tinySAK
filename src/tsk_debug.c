@@ -20,7 +20,7 @@
 /**@file tsk_debug.c
  * @brief Utility functions for debugging purpose.
  */
-#include "tsk_debug.h"
+#include "tinysak/tsk_debug.h"
 
 /**@defgroup tsk_debug_group Utility functions for debugging purpose.
 */

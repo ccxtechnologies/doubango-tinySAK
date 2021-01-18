@@ -27,10 +27,10 @@
  *
 
  */
-#include "tsk_buffer.h"
+#include "tinysak/tsk_buffer.h"
 
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 #if defined(_WIN32_WCE)
 #	include "tsk_string.h" /* tsk_strlen() */
@@ -379,4 +379,3 @@ static const tsk_object_def_t tsk_buffer_def_s = {
     tsk_null,
 };
 const tsk_object_def_t *tsk_buffer_def_t = &tsk_buffer_def_s;
-

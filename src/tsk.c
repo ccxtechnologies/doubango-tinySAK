@@ -22,7 +22,7 @@
 * along with DOUBANGO.
 *
 */
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 /** @page _Page_TinySAK_Overview Swiss Army Knife
 
@@ -149,7 +149,7 @@ static int person_cmp(const tsk_object_t *_p1, const tsk_object_t *_p2)
 * As you expect, inheritance is not supported in ANSI-C. <br>
 * As any C Structure could be casted to a pointer to its first element, inheritance could be achieved like this:<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 // (a student is a person)
 typedef struct student_s
 {
@@ -186,7 +186,7 @@ tsk_object_unref(bob);
 * The object will be freed only if; when decremented by 1 the reference count of the object is equal to zero. In all case (freed or not) the pointer value will be set to NULL.<br>
 * The above example can be rewritten like this:<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 // create a person: will call the constructor
 person_t* bob = PERSON_CREATE("bob");
@@ -206,7 +206,7 @@ TSK_OBJECT_SAFE_FREE(bob);
 * Threads can be created using @ref tsk_thread_create() and joined using @ref tsk_thread_join().<br>
 * You can temporary cease the executing of a thread by calling @ref tsk_thread_sleep().<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 void* MyThreadFunction(void *arg)
 {
@@ -230,7 +230,7 @@ void test_threads()
 * <h2>7.2 Mutexes</h2>
 * Mutexes (Mutual exclusion) are used to protect a portion of code or function against concurrent access. Concurrent access happens when two or several threads try to execute the same portion of code at nearly the same time.<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 // create the mutext
 tsk_mutex_handle_t *mutex = tsk_mutex_create();
@@ -253,7 +253,7 @@ tsk_mutex_destroy(&mutex);
 * Only counting semaphores are supported by the framework.
 * Counting semaphores are used to control the access to a portion of code which might be executed by multiple threads. A thread will have rights to execute the portion of code only if the semaphore’s internal counter value is different than zero. Before executing the code to control, a thread should decrement the counter to check if it has permit.<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 // (create the semaphore)
 tsk_semaphore_handle_t *sem = tsk_semaphore_create();
@@ -282,5 +282,3 @@ tsk_semaphore_destroy(&sem);
 * <h2>9	Timer Manager</h2>
 *
 */
-
-

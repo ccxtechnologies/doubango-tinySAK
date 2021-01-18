@@ -22,10 +22,10 @@
  * @brief Useful string functions to manipulate strings.
  * As I'm a lazy man, some comments come from <ahref="http://www.cplusplus.com">this website</a>
  */
-#include "tsk_string.h"
-#include "tsk_memory.h"
-#include "tsk_time.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_time.h"
+#include "tinysak/tsk_debug.h"
 
 #include <ctype.h>
 #include <stdio.h>
@@ -683,4 +683,3 @@ static const tsk_object_def_t tsk_string_def_s = {
     tsk_string_cmp,
 };
 const tsk_object_def_t *tsk_string_def_t = &tsk_string_def_s;
-

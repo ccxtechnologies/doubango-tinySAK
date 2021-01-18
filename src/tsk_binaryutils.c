@@ -27,7 +27,7 @@
  *
 
  */
-#include "tsk_binaryutils.h"
+#include "tinysak/tsk_binaryutils.h"
 
 /**@defgroup tsk_binaryutils_group Binary utility functions.
 */

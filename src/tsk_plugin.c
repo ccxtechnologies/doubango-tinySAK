@@ -16,10 +16,10 @@
 * along with DOUBANGO.
 *
 */
-#include "tsk_plugin.h"
-#include "tsk_string.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_plugin.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 typedef int (*symbol_get_def_count)(void);
 typedef tsk_plugin_def_type_t (*symbol_get_def_type_at)(int index);

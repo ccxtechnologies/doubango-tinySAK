@@ -28,10 +28,10 @@
 
  */
 
-#include "tsk_condwait.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
-#include "tsk_time.h"
+#include "tinysak/tsk_condwait.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
+#include "tinysak/tsk_time.h"
 #include <time.h>
 
 #if TSK_UNDER_WINDOWS
@@ -313,4 +313,3 @@ void tsk_condwait_destroy(tsk_condwait_handle_t** handle)
         TSK_DEBUG_WARN("Cannot free an uninitialized condwait object");
     }
 }
-

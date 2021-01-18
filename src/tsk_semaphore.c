@@ -22,11 +22,11 @@
  * @brief Pthread/Windows Semaphore utility functions.
  * @date Created: Sat Nov 8 16:54:58 2009 mdiop
  */
-#include "tsk_semaphore.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
-#include "tsk_string.h"
-#include "tsk_time.h"
+#include "tinysak/tsk_semaphore.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_time.h"
 
 /* Apple claims that they fully support POSIX semaphore but ...
  */
@@ -206,4 +206,3 @@ void tsk_semaphore_destroy(tsk_semaphore_handle_t** handle)
         TSK_DEBUG_WARN("Cannot free an uninitialized semaphore object");
     }
 }
-

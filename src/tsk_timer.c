@@ -27,14 +27,14 @@
 *
 * @date Created: Sat Nov 8 16:54:58 2009 mdiop
 */
-#include "tsk_timer.h"
-#include "tsk_debug.h"
-#include "tsk_list.h"
-#include "tsk_thread.h"
-#include "tsk_runnable.h"
-#include "tsk_condwait.h"
-#include "tsk_semaphore.h"
-#include "tsk_time.h"
+#include "tinysak/tsk_timer.h"
+#include "tinysak/tsk_debug.h"
+#include "tinysak/tsk_list.h"
+#include "tinysak/tsk_thread.h"
+#include "tinysak/tsk_runnable.h"
+#include "tinysak/tsk_condwait.h"
+#include "tinysak/tsk_semaphore.h"
+#include "tinysak/tsk_time.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <windows.h>
@@ -523,5 +523,3 @@ static const tsk_object_def_t tsk_timer_def_s = {
     tsk_timer_cmp,
 };
 const tsk_object_def_t * tsk_timer_def_t = &tsk_timer_def_s;
-
-

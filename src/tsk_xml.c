@@ -27,13 +27,13 @@
  *
 
  */
-#include "tsk_xml.h"
+#include "tinysak/tsk_xml.h"
 
 #if HAVE_LIBXML2_H
 
-#include "tsk_string.h"
-#include "tsk_memory.h"
-#include "tsk_macros.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_macros.h"
 
 #include <string.h>
 
@@ -307,4 +307,3 @@ xmlNodePtr tsk_xml_select_node(const xmlNodePtr root, ...)
 }
 
 #endif /* HAVE_LIBXML2_H */
-

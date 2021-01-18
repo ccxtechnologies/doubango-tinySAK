@@ -22,9 +22,9 @@
  * @brief Utility functions to encode/decode urls.
  *
  */
-#include "tsk_url.h"
-#include "tsk_memory.h"
-#include "tsk_string.h"
+#include "tinysak/tsk_url.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_string.h"
 
 #include <ctype.h>
 #include <string.h>
@@ -88,4 +88,3 @@ char* tsk_url_decode(const char* url)
     *pbuf = '\0';
     return buf;
 }
-

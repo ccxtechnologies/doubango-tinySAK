@@ -28,7 +28,7 @@
 
  */
 
-#include "tsk_ppfcs16.h"
+#include "tinysak/tsk_ppfcs16.h"
 
 /**@defgroup tsk_ppfcs16_group PPP in HDLC-like Framing (RFC 1662).
 */
@@ -78,4 +78,3 @@ uint16_t tsk_pppfcs16(register uint16_t fcs, register const uint8_t* cp, registe
     }
     return (fcs);
 }
-

@@ -27,9 +27,9 @@
  *
 
  */
-#include "tsk_thread.h"
-#include "tsk_debug.h"
-#include "tsk_memory.h"
+#include "tinysak/tsk_thread.h"
+#include "tinysak/tsk_debug.h"
+#include "tinysak/tsk_memory.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <windows.h>
@@ -193,4 +193,3 @@ int tsk_thread_destroy(tsk_thread_handle_t** handle)
     }
     return 0;
 }
-

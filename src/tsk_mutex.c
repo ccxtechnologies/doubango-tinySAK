@@ -27,9 +27,9 @@
  *
 
  */
-#include "tsk_mutex.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_mutex.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <windows.h>
@@ -186,4 +186,3 @@ void tsk_mutex_destroy(tsk_mutex_handle_t** handle)
         TSK_DEBUG_WARN("Cannot free an uninitialized mutex");
     }
 }
-

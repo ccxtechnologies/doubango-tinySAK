@@ -28,8 +28,8 @@
  *
 
  */
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 #include <stdarg.h>
 #include <ctype.h>

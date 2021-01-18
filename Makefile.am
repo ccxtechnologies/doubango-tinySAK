@@ -37,4 +37,4 @@ libtinySAK_la_LDFLAGS = $LDFLAGS -no-undefined
 libtinySAK_ladir = $(includedir)/tinysak
 
 src_includedir = $(includedir)/tinysak
-src_include_HEADERS = src/*.h
+src_include_HEADERS = include/tinysak/*.h

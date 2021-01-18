@@ -27,10 +27,10 @@
  *
 
  */
-#include "tsk_hmac.h"
+#include "tinysak/tsk_hmac.h"
 
-#include "tsk_string.h"
-#include "tsk_buffer.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_buffer.h"
 
 #include <string.h>
 
@@ -225,4 +225,3 @@ int hmac_sha1digest_compute(const uint8_t* input, tsk_size_t input_size, const c
 {
     return tsk_hmac_xxxcompute(input, input_size, key, key_size, sha1, (uint8_t*)result);
 }
-

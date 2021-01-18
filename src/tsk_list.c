@@ -21,9 +21,9 @@
  * @brief Linked list.
  *
  */
-#include "tsk_list.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_list.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 #include <string.h>
 

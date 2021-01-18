@@ -27,11 +27,11 @@
  *
 
  */
-#include "tsk_params.h"
-#include "tsk_memory.h"
-#include "tsk_string.h"
-#include "tsk_common.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_params.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_common.h"
+#include "tinysak/tsk_debug.h"
 
 #include <string.h>
 
@@ -381,4 +381,3 @@ static const tsk_object_def_t tsk_param_def_s = {
     tsk_null,
 };
 const tsk_object_def_t *tsk_param_def_t = &tsk_param_def_s;
-

@@ -21,10 +21,10 @@
  * @brief Base object implementation.
  *
  */
-#include "tsk_object.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
-#include "tsk_common.h"
+#include "tinysak/tsk_object.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
+#include "tinysak/tsk_common.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <windows.h>
@@ -370,7 +370,7 @@ The comparator function is also used by the linked-list to sort <i>"well-defined
 * As you may expect, inheritance is not supported in ANSI-C. <br>
 * As any C Structure could be casted to a pointer to its first element, inheritance could be achieved like this:<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 // (a student is a person)
 typedef struct student_s
 {
@@ -413,7 +413,7 @@ static person_t* person_create(const char* name)
 * The object will be freed only if; when decremented by 1 the reference count of the object is equal to zero. In all case (freed or not) the pointer value will be set to NULL to avoid trying to free the object again.<br>
 * The above example could be rewritten like this:<br>
 * @code
-#include "tsk.h"
+#include "tinysak/tsk.h"
 
 // create a person: will call the constructor
 person_t* bob = person_create("bob");

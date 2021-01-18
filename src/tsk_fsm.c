@@ -28,9 +28,9 @@
  *
 
  */
-#include "tsk_fsm.h"
-#include "tsk_memory.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_fsm.h"
+#include "tinysak/tsk_memory.h"
+#include "tinysak/tsk_debug.h"
 
 /**@defgroup tsk_fsm_group Finite-state machine (FSM) implementation.
 */

@@ -28,9 +28,9 @@
  *
 
  */
-#include "tsk_md5.h"
+#include "tinysak/tsk_md5.h"
 
-#include "tsk_string.h"
+#include "tinysak/tsk_string.h"
 
 #include <string.h>
 

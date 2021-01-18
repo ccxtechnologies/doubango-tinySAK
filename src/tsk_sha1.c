@@ -90,9 +90,9 @@
  *
 
  */
-#include "tsk_sha1.h"
+#include "tinysak/tsk_sha1.h"
 
-#include "tsk_string.h"
+#include "tinysak/tsk_string.h"
 
 /**@defgroup tsk_sha1_group SHA1 (RFC 3174) utility functions.
  *  Copyright (C) The Internet Society (2001).  All Rights Reserved.<br>

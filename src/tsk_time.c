@@ -27,9 +27,9 @@
 *
 * @date Created: Sat Nov 8 16:54:58 2009 mdiop
 */
-#include "tsk_time.h"
+#include "tinysak/tsk_time.h"
 
-#include "tsk_debug.h"
+#include "tinysak/tsk_debug.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <Winsock2.h> // timeval

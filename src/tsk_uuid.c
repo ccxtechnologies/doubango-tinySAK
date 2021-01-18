@@ -28,11 +28,11 @@
  *
 
  */
-#include "tsk_uuid.h"
+#include "tinysak/tsk_uuid.h"
 
-#include "tsk_sha1.h"
-#include "tsk_string.h"
-#include "tsk_time.h"
+#include "tinysak/tsk_sha1.h"
+#include "tinysak/tsk_string.h"
+#include "tinysak/tsk_time.h"
 
 #include <stdlib.h>
 #include <string.h>

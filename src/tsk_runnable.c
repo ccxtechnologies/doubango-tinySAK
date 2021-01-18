@@ -27,9 +27,9 @@
  *
 
  */
-#include "tsk_runnable.h"
-#include "tsk_thread.h"
-#include "tsk_debug.h"
+#include "tinysak/tsk_runnable.h"
+#include "tinysak/tsk_thread.h"
+#include "tinysak/tsk_debug.h"
 
 #if TSK_UNDER_WINDOWS
 #	include <windows.h>
@@ -310,4 +310,3 @@ static const tsk_object_def_t tsk_runnable_def_s = {
     tsk_null,
 };
 const tsk_object_def_t *tsk_runnable_def_t = &tsk_runnable_def_s;
-

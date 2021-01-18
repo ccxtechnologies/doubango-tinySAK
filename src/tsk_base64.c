@@ -27,9 +27,9 @@
  *
 
  */
-#include "tsk_base64.h"
+#include "tinysak/tsk_base64.h"
 
-#include "tsk_memory.h"
+#include "tinysak/tsk_memory.h"
 
 /**@defgroup tsk_base64_group Base64 encoder/decoder as per RFC 4648.
 * @brief Provides base64 encoder and decoder functions.
