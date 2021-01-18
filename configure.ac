@@ -79,5 +79,4 @@ AC_TRY_COMPILE([#include <pthread.h>],
 
 AC_OUTPUT(
 Makefile
-src/Makefile
 )
